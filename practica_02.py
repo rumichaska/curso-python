@@ -84,3 +84,80 @@ rango = range(8)
 print(rango)
 
 # DICCIONARIOS
+
+diccionario = {
+    "nombre": "Diego",
+    "apellido": "Castro",
+    "edad": 33,
+    "profesion": "Ing. Foretal",
+    "sexo": "Masculino"
+}
+
+print(diccionario)
+
+# Formas de acceder a los valores del diccionario
+print(diccionario["nombre"])
+print(diccionario.get("apellido"))
+
+# Cambiar un valor del diccionario
+diccionario["nombre"] = "Dante"
+print(diccionario)
+
+# Para conocer la cantidad de elementos del diccionario
+print(len(diccionario))
+
+# Para agregar valores
+diccionario["estado_civil"] = "Soltero"
+print(diccionario)
+
+# Formas para copiar un diccionario
+copiaDiccionario = diccionario.copy()
+copiaDiccionario2 = dict(diccionario)
+print(copiaDiccionario)
+print(copiaDiccionario2)
+
+# Formas para eliminar valores
+diccionario.pop("apellido")
+diccionario.popitem() # Elimina el último valor añadido
+del diccionario["profesion"]
+print(diccionario)
+
+# Para eliminar todos los elementos
+copiaDiccionario.clear()
+print(copiaDiccionario)
+
+# Crear diccionario anidados
+gatitos = {
+    "Valentina": {
+        "edad": 3,
+        "sexo": "Hembra"
+    },
+    "Danton": {
+        "edad": 3,
+        "sexo": "Macho"
+    },
+    "Pantro": {
+        "edad": 2.5,
+        "sexo": "Macho"
+    },
+    "Estrellita": {
+        "edad": 2,
+        "sexo": "Hembra"
+    }
+}
+print(gatitos)
+
+# Formas para acceder a los valores de diccionarios anidados
+print(gatitos.get("Pantro"))
+print(gatitos["Valentina"]["edad"])
+
+# Crear diccionarios con la funcion dict()
+alumno1 = dict(nombre = "Juan", apellido = "Pastor", edad = 32)
+print(alumno1)
+
+# BOOLEANOS
+
+verdadero = True
+falso = False
+print(verdadero)
+print(falso)
