@@ -77,3 +77,48 @@ if segundoValor == "no es numero":
     exit()
 
 print(primerValor + segundoValor)
+
+# Calculadora 4
+
+print("ESTA INICIANDO LA CUARTA CALCULADORA")
+
+# Para validar el valor númerico
+primerValor = input("Ingrese primer número: ")
+
+try:
+    primerValor = int(primerValor)
+except:
+    primerValor = "no es numero"
+
+# Terminar sesión cuando no se cumpla la condición
+if primerValor == "no es numero":
+    print("El valor ingresado no es un número")
+    exit()
+
+# Para validar el valor númerico
+segundoValor = input("Ingrese segundo número: ")
+
+try:
+    segundoValor = int(segundoValor)
+except:
+    segundoValor = "no es numero" 
+
+# Terminar sesión cuando no se cumpla la condición
+if segundoValor == "no es numero":
+    print("El valor ingresado no es un número")
+    exit()
+
+# Vamos a considera el operador para realizar lo cálculos
+
+simbolo = input("Ingrese la operación: ")
+
+if simbolo == "+":
+    print("Suma: ", primerValor + segundoValor)
+elif simbolo == "-":
+    print("Resta: ", primerValor - segundoValor)
+elif simbolo == "*":
+    print("Producto: ", primerValor * segundoValor)
+elif simbolo == "/":
+    print("División: ", primerValor / segundoValor)
+else:
+    print("El simbolo ingresado no es válido")
